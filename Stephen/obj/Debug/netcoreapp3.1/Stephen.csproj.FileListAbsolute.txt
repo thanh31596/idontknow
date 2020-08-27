@@ -1,0 +1,11 @@
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\obj\Debug\netcoreapp3.1\Stephen.AssemblyInfoInputs.cache
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\obj\Debug\netcoreapp3.1\Stephen.AssemblyInfo.cs
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\bin\Debug\netcoreapp3.1\Stephen.exe
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\bin\Debug\netcoreapp3.1\Stephen.deps.json
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\bin\Debug\netcoreapp3.1\Stephen.runtimeconfig.json
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\bin\Debug\netcoreapp3.1\Stephen.runtimeconfig.dev.json
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\bin\Debug\netcoreapp3.1\Stephen.dll
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\bin\Debug\netcoreapp3.1\Stephen.pdb
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\obj\Debug\netcoreapp3.1\Stephen.dll
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\obj\Debug\netcoreapp3.1\Stephen.pdb
+C:\Users\n10648771\OneDrive - Queensland University of Technology\Stephen\Stephen\obj\Debug\netcoreapp3.1\Stephen.csprojAssemblyReference.cache

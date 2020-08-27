@@ -1,1 +1,3 @@
 # gogomomo
+# finalgomokuhopefully
+# finalgomokuhopefully

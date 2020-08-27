@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Diagnostics;
+using System.IO;
 
 namespace Stephen
 {
 
     public abstract class Player
     {
+        
         public int player { get; private set; }
 
         public void SetIndex_player(int p)

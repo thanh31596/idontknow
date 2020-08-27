@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n10648771\\OneDrive - Queensland University of Technology\\Stephen\\Stephen\\Stephen.csproj": {}
+    "C:\\Users\\n10648771\\Source\\Repos\\gogomomo\\Stephen\\Stephen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n10648771\\OneDrive - Queensland University of Technology\\Stephen\\Stephen\\Stephen.csproj": {
+    "C:\\Users\\n10648771\\Source\\Repos\\gogomomo\\Stephen\\Stephen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n10648771\\OneDrive - Queensland University of Technology\\Stephen\\Stephen\\Stephen.csproj",
+        "projectUniqueName": "C:\\Users\\n10648771\\Source\\Repos\\gogomomo\\Stephen\\Stephen.csproj",
         "projectName": "Stephen",
-        "projectPath": "C:\\Users\\n10648771\\OneDrive - Queensland University of Technology\\Stephen\\Stephen\\Stephen.csproj",
+        "projectPath": "C:\\Users\\n10648771\\Source\\Repos\\gogomomo\\Stephen\\Stephen.csproj",
         "packagesPath": "C:\\Users\\n10648771\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n10648771\\OneDrive - Queensland University of Technology\\Stephen\\Stephen\\obj\\",
+        "outputPath": "C:\\Users\\n10648771\\Source\\Repos\\gogomomo\\Stephen\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

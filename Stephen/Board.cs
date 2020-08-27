@@ -32,9 +32,9 @@ namespace Stephen
         public int current_player;
         public int last_move;
         //Initiate a chess board 
-        public virtual void init_board(int startPlayer = 0)
+        public virtual void SetupBoard(int startPlayer = 0)
         {
-            this.current_player = this.players[startPlayer];
+            
             this.emptySquares = new List<int>();
             for (int i = 0; i < size; ++i)
             {
@@ -43,6 +43,7 @@ namespace Stephen
             }
             this.squares = new int[size];
             this.last_move = -1;
+            this.current_player = this.players[startPlayer];
         }
 
         //Get the location of each cell
@@ -65,12 +66,35 @@ namespace Stephen
                 return -1;
             }
             return move;
+
         }
+
         //get player for making future moves
         public int get_current_player()
         {
             return current_player;
         }
+
+        public int straight_move(int[] coordinator)
+        {
+            if (coordinator.Length != 2)
+            {
+                return -1;
+            }
+            var x = coordinator[0];
+            var y = coordinator[1];
+            var move = x*row  + x;
+            if (move >= size || move < 0)
+            {
+                return y*column+y; 
+            }
+            return move;
+
+        }
+
+
+
+
         //Function helps to remain the value of coordinator pairs: 
         public double[,,] current_state()
         {
@@ -183,6 +207,7 @@ namespace Stephen
         }
         public virtual Board DuplicateMoves()
         {
+
             var b = new Board(row, column, n_in_row)
             {
                 movemaded = movemaded,
@@ -199,6 +224,7 @@ namespace Stephen
                 b.squares[i] = squares[i];
             }
             return b;
+            
         }
         public int PosCol(int position)
         {

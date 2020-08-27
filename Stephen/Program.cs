@@ -1,14 +1,18 @@
 ﻿using System;
+using System.IO;
+
+
 
 namespace Stephen
-{ 
+{
 	class Program
 	{
 		static void Main(string[] args)
-		{
+		{			
 			var stillPlaying = true;
-			const int w = 10;
+			const int w = 15;
 			var comp = new Computer();
+			var str = new ComputerStraight();
 			var fist = new HumanFirst();
 			var sec = new HumanSecond();
 			var game = new Game(new Board(w, w, 5));
@@ -17,17 +21,21 @@ namespace Stephen
 			Console.WriteLine("Vu Kim Thanh - Stephen Vu 10648771!");
 			Console.WriteLine("-----------------------\n");
 			Console.ResetColor();
-
+			string url = "https://google.com";
 			while (stillPlaying)
 			{
-				Console.WriteLine("What would you like to do:");
+				Console.ForegroundColor = ConsoleColor.DarkYellow;
+				Console.WriteLine("Welcome to my game, please choose your game type:");
 				Console.WriteLine("1. Start a new single-player game");
 				Console.WriteLine("2. Start a new multiplayer game");
-				Console.WriteLine("3. Quit\n");
+				Console.WriteLine("3. Start a new single-player straight game");
+				Console.WriteLine("4. Open Saved Game");
+				Console.WriteLine("5. Direct to an Online help system ");
+				Console.WriteLine("6. Quit\n");
+				Console.ResetColor();
+				Console.Write("Choose your option please: ");
 
-				Console.Write("Type a number and hit <enter>: ");
-
-				var choice = GetUserInput("[123]");
+				var choice = GetUserInput("[123456]");
 
 				switch (choice)
 				{
@@ -39,15 +47,26 @@ namespace Stephen
 						game.start_play(fist, sec, 0);
 						break;
 					case "3":
+						game.start_play(fist, str, 0);
+						
+						break;
+					case "4":
+						Board board = Data.ReadFromBinaryFile<Board>("C:/Board.pfcsheet");
+						break;
+					case "5":
+						Helper.OpenBrowser(url);
+						break;
+					case "6":
 						stillPlaying = false;
 						break;
+
 				}
 			}
 
 
 
 		}
-		private static string GetUserInput(string validPattern = null)
+		public static string GetUserInput(string validPattern = null)
 		{
 			var input = Console.ReadLine();
 			input = input.Trim();
@@ -62,6 +81,7 @@ namespace Stephen
 
 			return input;
 		}
+
 	}
 }
 
